@@ -1,0 +1,112 @@
+/* Style for Card */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0.25rem;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.4 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+/* Style for Absences */
+ul{
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+ 
+ul li{
+    list-style: none;
+    text-align: start;
+    padding-bottom: 5px;    
+}
+
+div p{
+    font-size: 20px;
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 127px;
+    padding-top: 16px;
+}
+
+div p b{
+    margin-left: 332px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-left: -32px;
+    margin-bottom: 10px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+ /* Style for Filiter */
+.type-filter {
+    font-size: 20px;
+    font-style:italic;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 240px;
+}
+select{
+    width:150px ;
+}
+.type-filter div {
+    padding-left: 150px;
+    padding-top: 30px;
+}
+/* Style for Pagination */
+.pagination {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 246px;
+    padding-top: 20px;
+    font-style: italic;
+}
+/* Style For Total Absences */
+.total-absences{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+div b{
+    margin-left: 118px;
+}
