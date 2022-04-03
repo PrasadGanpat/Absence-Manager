@@ -126,7 +126,6 @@ export class Absences extends Component {
     }
 }
 
-
 btnIncrementClick() {
       this.setState({upperPageBound: this.state.upperPageBound + this.state.pageBound});
       this.setState({lowerPageBound: this.state.lowerPageBound + this.state.pageBound});
@@ -152,7 +151,6 @@ btnPrevClick() {
     this.setState({ currentPage : listid});
     this.setPrevAndNextBtnClass(listid);
   }
-  
   
 handlestartDateChange = (e) => {
     let startDate = moment(new Date(e.target.value)).format("YYYY-MM-DD");
@@ -284,7 +282,7 @@ btnNextClick() {
               <input type="date" id="startDate" onChange={this.handlestartDateChange.bind(this)} />
               <span> &nbsp;&nbsp;End Date :&nbsp;&nbsp;</span> 
               <input type="date" id="endDate" onChange={this.handleendDateChange.bind(this)} />
-            </div>
+          </div>
           <br/>
           <div><b className='total-absences'>Total Absences || {payload.length} </b>&nbsp; </div>
           <br/>
@@ -301,11 +299,9 @@ btnNextClick() {
               {pageIncrementBtn}
               {renderNextBtn}
             </ul>
-            </nav>
+          </nav>
           </div>
-
       );
-    }
-    
+    }    
   }
 }
